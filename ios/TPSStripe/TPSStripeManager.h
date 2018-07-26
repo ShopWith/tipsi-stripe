@@ -9,9 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <PassKit/PassKit.h>
 #import <Stripe/Stripe.h>
+#import <React/RCTEventEmitter.h>
 #import <React/RCTBridgeModule.h>
 #import <React/RCTConvert.h>
 
-@interface TPSStripeManager : NSObject <RCTBridgeModule, PKPaymentAuthorizationViewControllerDelegate, STPAddCardViewControllerDelegate>
+API_AVAILABLE(ios(11.0))
+@interface TPSStripeManager : RCTEventEmitter <RCTBridgeModule, PKPaymentAuthorizationViewControllerDelegate, STPAddCardViewControllerDelegate>
+
+@property (nonatomic, copy) void (^ _Nullable shippingContactCompletion)(PKPaymentRequestShippingContactUpdate * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable shippingMethodCompletion)(PKPaymentRequestShippingMethodUpdate * _Nonnull);
 
 @end
