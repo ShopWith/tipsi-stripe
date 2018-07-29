@@ -1,6 +1,6 @@
 {
   "name": "@lewisf/tipsi-stripe",
-  "version": "5.3.0",
+  "version": "5.3.3",
   "description": "React Native Stripe binding for iOS/Andriod platforms",
   "main": "src/index.js",
   "scripts": {
@@ -28,8 +28,8 @@
   "homepage": "https://github.com/tipsi/tipsi-stripe#readme",
   "rnpm": {
     "commands": {
-      "prelink": "node_modules/tipsi-stripe/scripts/pre-link.sh",
-      "postlink": "node_modules/tipsi-stripe/scripts/post-link.sh"
+      "prelink": "node_modules/@lewisf/tipsi-stripe/scripts/pre-link.sh",
+      "postlink": "node_modules/@lewisf/tipsi-stripe/scripts/post-link.sh"
     }
   },
   "peerDependencies": {
