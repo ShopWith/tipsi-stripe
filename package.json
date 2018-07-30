@@ -1,6 +1,6 @@
 {
   "name": "@lewisf/tipsi-stripe",
-  "version": "5.3.4",
+  "version": "5.3.5",
   "description": "React Native Stripe binding for iOS/Andriod platforms",
   "main": "src/index.js",
   "scripts": {
