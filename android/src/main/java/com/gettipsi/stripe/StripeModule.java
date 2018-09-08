@@ -85,6 +85,11 @@ public class StripeModule extends ReactContextBaseJavaModule {
     sInstance = this;
   }
 
+  @Override    
+  public boolean canOverrideExistingModule() {        
+    return true;    
+  }   
+
   @Override
   public String getName() {
     return MODULE_NAME;
